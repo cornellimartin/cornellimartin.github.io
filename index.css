@@ -1,0 +1,49 @@
+header {
+    background-color: rgba(0, 47, 255, 0.932);
+    width: 60%;
+    margin: auto;
+    border-radius: 25px;
+    color: azure;
+}
+
+h1 {
+    text-align: center;
+    font-size: 500%;
+}
+
+img {
+    float: right;
+    margin-top: -120px;
+    margin-right: 20px;
+}
+
+#mainContent {
+    margin: auto;
+    width: 50%;
+}
+
+footer {
+    background-color: rgba(0, 47, 255, 0.932);
+    width: 60%;
+    margin: auto;
+    border-radius: 25px;
+}
+
+p {
+    margin: auto;
+    width: 50%;
+    color: azure;
+}
+
+h2 {
+    font-size: 200%;
+    text-decoration: underline;
+}
+
+li {
+    font-size: 150%;
+}
+
+#external {
+    color: azure;
+}
