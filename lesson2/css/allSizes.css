@@ -3,12 +3,14 @@
 ***********************************************/
 body {
     color: #E1E2E2;
+    font-family: 'Handlee', cursive;
 }
 header, footer {
     background-color: #1D2228;
     border-radius: 10px;
     width: 100%;
     margin: 0px;
+    font-family: 'Courgette', cursive;
 }
 
 footer p {
