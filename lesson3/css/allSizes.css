@@ -3,6 +3,9 @@
 ***********************************************/
 body {
     color: #ecfcff;
+    background-color: #ecfcff;
+    font-family: 'Pompiere', cursive;
+    font-size: 20px;
 }
 
 header, footer {
@@ -43,6 +46,7 @@ article {
 
 article p {
     margin: 0;
+    font-weight: bold;
 }
 
 #bottom {
@@ -65,6 +69,8 @@ h1 {
     text-align: center;
     margin: 0;
     padding: 5px;
+    font-family: 'Caveat', cursive;
+    font-size: 80px;
 }
 
 p {
@@ -90,7 +96,7 @@ a {
 /***********************************************
 *                   DESKTOP                    *
 ***********************************************/
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 60em) { 
     header, footer, nav  {
         width: 60%;
         margin-left: auto;
