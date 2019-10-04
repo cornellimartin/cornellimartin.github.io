@@ -1,0 +1,112 @@
+/***********************************************
+*                   MOBILE                     *
+***********************************************/
+body {
+    color: #ecfcff;
+}
+
+header, footer {
+    width: 100%;
+    margin: auto;
+    background-color: #5edfff;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: #b2fcff;
+    margin: auto;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    padding: 5px;
+    margin: auto;
+}
+
+nav li a:hover{
+    background-color: #3e64ff;
+}
+
+article {
+    border: #3e64ff;
+    border-style: groove;
+    margin: 30px;
+    color: #3e64ff;
+    text-align: center;
+}
+
+article p {
+    margin: 0;
+}
+
+#bottom {
+    margin-bottom: 10px;
+}
+
+#palette {
+    border: black;
+    border-style: solid;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#palette img {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+}
+
+/***********************************************
+*                   TABLET                     *
+***********************************************/
+@media only screen and (min-width: 37.5em) {
+    nav ul { 
+        display: flex; 
+    }
+    nav ul li { 
+        flex: 1 1 100%; 
+    }
+}
+/***********************************************
+*                   DESKTOP                    *
+***********************************************/
+@media only screen and (min-width: 60em) {
+    header, footer, nav  {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    article {
+        width: 59%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    nav ul { 
+        display: flex; 
+    }
+    nav ul li { 
+        flex: 1 1 100%; 
+    }
+
+    #palette {
+        width: 59%;
+    }
+}
