@@ -49,6 +49,10 @@ article p {
     font-weight: bold;
 }
 
+tr {
+    font-weight: bold;
+}
+
 #bottom {
     margin-bottom: 10px;
 }
@@ -119,4 +123,14 @@ a {
     #palette {
         width: 59%;
     }
+
+    .row {
+        display: flex;
+    }
+
+    .column {
+        flex: 1 1 100%; 
+    }
+      
+      
 }
