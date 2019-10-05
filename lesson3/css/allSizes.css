@@ -86,6 +86,42 @@ a {
     font-weight: bold;
 }
 
+table, td, th {  
+    border: 1px solid rgba(0,0,0,0.75);
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #b2fcff;
+    color: black;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.75);
+}
+
+.column img {
+    border-radius: 8px;
+    width: auto;
+}
+
+tr ul li {
+    text-align: left;
+    padding: 5px;
+}
+
+td {
+    padding: 15px;
+}
+
+th {
+    padding: 10px;
+}
+
 /***********************************************
 *                   TABLET                     *
 ***********************************************/
@@ -113,24 +149,24 @@ a {
         margin-top: 30px;
         margin-bottom: 30px;
     }
+
     nav ul { 
         display: flex; 
     }
+
     nav ul li { 
         flex: 1 1 100%; 
     }
 
     #palette {
         width: 59%;
-    }
-
+    }        
+    
     .row {
         display: flex;
     }
 
     .column {
         flex: 1 1 100%; 
-    }
-      
-      
+    }  
 }
