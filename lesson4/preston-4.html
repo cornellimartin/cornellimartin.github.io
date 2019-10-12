@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Caveat%7cPompiere&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <script type="text/javascript" src="js/script.js"></script>
     <title>Preston</title>
 </head>
 <body>
@@ -21,8 +22,8 @@
     </header>
     
     <nav>
-        <ul>
-            <li id="button"><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="navList" class="hide">
             <li><a href="#">Home</a></li>
             <li><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -31,8 +32,8 @@
             <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
-    hero image/weather summary, 5 day forecast, article, and the contact information.
     <main>
+        <h1 class="heading">Preston Idaho</h1>
         <div>Hero w/ weather summary</div>
         <div>5 Day Forecast</div>
         <div>Article</div>
@@ -41,6 +42,7 @@
 
     <footer>
             <p>&copy; Uruguayan Forecaster | BYU-Idaho | Martin S. Cornelli | <span id="currentDate"></span></p>
+            <script type="text/javascript" src="js/script.js"></script>
     </footer>
 </body>
 </html>
