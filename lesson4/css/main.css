@@ -17,13 +17,10 @@ header, footer {
     text-align: center;
     width: 100%;
     display: flex;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 100px;
     grid-gap: 10px;
-}
-
-img {
-    margin-top: 50px;
 }
 
 .heading {
@@ -32,7 +29,7 @@ img {
     margin-top: 0px;
 }
 
-#button {
+#button {  
     background: #00f6ff; /* Old browsers */
     background: -moz-linear-gradient(top,  #00f6ff 0%, #7db9e8 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  #00f6ff 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
@@ -43,6 +40,11 @@ img {
 ul {
     padding: 0px;
     margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
 }
 
 nav ul li {
@@ -54,6 +56,16 @@ nav ul li a {
     margin: 0 auto;
     font-weight: bold;
     color: black;
+}
+
+main div {
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border-style: dotted;
+    margin-bottom: 20px;
+    width
 }
 
 /***********************************************
