@@ -159,7 +159,7 @@ h3 {
 
 .fiveDayContainer {
     display: none;
-    height: 0 auto;
+    height: auto;
 }
 
 article {
