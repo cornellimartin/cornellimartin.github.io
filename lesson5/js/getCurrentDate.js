@@ -2,6 +2,12 @@ var today = new Date();
 var day;
 var month;
 
+if (today.getDay() == 5) {
+    document.getElementById("notification").style.display = "block";
+} else {
+    document.getElementById("notification").style.display = "none";
+}
+
 switch (today.getDay()) {
     case 0:
     day = "Sunday";

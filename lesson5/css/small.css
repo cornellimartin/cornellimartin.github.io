@@ -246,3 +246,17 @@ article img {
 .contact img {
     display: none;
 }
+
+aside {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    background: #fce300; /* Old browsers */
+    background: -moz-linear-gradient(top, #fce300 1%, #f1da36 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fce300 1%,#f1da36 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fce300 1%,#f1da36 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fce300', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.75);
+}
