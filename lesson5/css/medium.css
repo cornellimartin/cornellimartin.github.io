@@ -62,11 +62,24 @@
         text-align: left;
     }
 
+    .contact {
+        display: flex;
+        text-align: center;
+    }
+
     .column {
         flex: 50%;
         padding: 10px;
         margin: 0 auto;
         margin-top: auto;
         margin-bottom: auto;
+    }
+
+    .contact img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: solid;
+        border-width: thin;
     }
 }
