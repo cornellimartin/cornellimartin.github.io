@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Caveat%7cPompiere&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Uruguayan Forecaster | Preston</title>
+</head>
+<body>
+    <aside id="notification">
+        Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion
+    </aside>
+    <header>
+        <div id="headerImg">
+            <img src="images/logo-big.png" alt="sun">
+        </div>
+        <div>
+            <h1 class="heading">Uruguayan Forecaster</h1>
+            <h2 class="heading">Plan outdoor fun and work</h2>
+        </div>
+    </header>
+    
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="navList" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="heading">Preston Idaho</h1>
+        <div class="heroDiv">
+            <div class="phDiv">
+                <picture>
+                    <source media="(min-width: 960px)" srcset="images/prestonLarge.jpg">
+                    <source media="(min-width: 400px)" srcset="images/prestonMedium.jpg">
+                    <source media="(min-width: 100px)" srcset="images/prestonSmall.jpg">                
+                    <img src="images/hero.jpg" alt="hero">
+                </picture>
+            </div>
+            <section class="weatherSummary">
+                <h3>Weather Summary</h3>                
+                   <p>Currently: </p><p class="align"><span>Sunny</span></p>
+                   <p>High: </p><p class="align"><span id="temp">76</span>ºF</p>
+                   <p>Wind Chill: </p><p class="align"><span> </span>*F</p>
+                   <p>Humidity: </p><p class="align"><span>69</span>%</p>
+                   <p>Wind Speed: </p><p class="align"><span id="windSpeed">5</span> mph</p>
+            </section>
+        </div>
+        <div class="fiveDayContainer">
+            <h3>5 Day Forecast</h3>
+            <div class="fiveDay">
+                <p class="days">Sun</p>
+                <img src="images/forecast.png" alt="sun">
+                <p class="days">Mon</p>
+                <img src="images/forecast.png" alt="sun">
+                <p class="days">Tue</p>
+                <img src="images/forecast.png" alt="sun">
+                <p class="days">Wed</p>
+                <img src="images/forecast.png" alt="sun">
+                <p class="days">Thu</p>
+                <img src="images/forecast.png" alt="sun">
+                <p class="temp">75º F</p>
+                <p class="temp">80º F</p>
+                <p class="temp">78º F</p>
+                <p class="temp">85º F</p>
+                <p class="temp">70º F</p>
+            </div>
+        </div>
+        <article>
+            <div class="column">
+                <h3>Article</h3>
+                <p class="author">by author</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis arcu in massa ullamcorper tincidunt. Donec consequat faucibus purus, eu bibendum ligula sodales id. Nam venenatis sagittis augue nec fringilla. Pellentesque convallis justo elit, ut iaculis turpis suscipit eget. Suspendisse maximus ante ut ipsum blandit, id blandit nisi ultricies. Integer vulputate sollicitudin dolor sed viverra. Fusce posuere turpis augue, sit amet hendrerit metus interdum dapibus. Fusce nec nulla convallis, fringilla tortor non, ultricies ante. Nullam convallis, mi ut blandit elementum, nibh odio consequat risus, eu vehicula ante lorem vel odio.</p>
+            </div>
+            <div class="column">
+                <img src="images/article.jpg" alt="map">
+            </div>
+        </article>
+        <div class="contact">
+            <div class="column">
+                <img src="images/map.PNG" alt="cityMap">
+            </div>
+            <div class="column">
+                <h3>Uruguayan Forecaster</h3>
+                <p><i class="material-icons">&#xe0c8;</i> 30N 1st E</p>
+                <p>Preston, ID 83263</p>
+                <br>
+                <p><i class="material-icons">&#xe551;</i> 999.999.9999</p>
+                <p><i class="material-icons">&#xe0be;</i> cor16006@byui.edu</p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+            <p>&copy; Uruguayan Forecaster | BYU-Idaho | Martin S. Cornelli | <span id="currentDate"></span></p>
+    </footer>
+    <script src="script/getCurrentDate.js"></script>
+    <script src="script/toggleMenu.js"></script>
+    <script src="script/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                'Pompiere', 
+                'Caveat'
+                ]
+            }
+        });
+    </script>
+</body>
+</html>
