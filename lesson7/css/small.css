@@ -127,5 +127,8 @@ figcaption {
 }
 
 figure {
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.75);
 }
