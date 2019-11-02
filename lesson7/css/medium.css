@@ -1,0 +1,36 @@
+/***********************************************
+*                   TABLET                     *
+***********************************************/
+@media only screen and (min-width: 900px) {
+    button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    ul {
+        flex-direction: row;
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+    
+    .column {
+        flex: 50%;
+        padding: 10px;
+        margin: 0 auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}

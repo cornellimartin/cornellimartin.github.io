@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Caveat%7cPompiere&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Uruguayan Forecaster | Preston</title>
+</head>
+<body>
+    <header>
+        <div id="headerImg">
+            <img src="images/logo-big.png" alt="sun">
+        </div>
+        <div>
+            <h1 class="heading">Uruguayan Forecaster</h1>
+            <h2 class="heading">Plan outdoor fun and work</h2>
+        </div>
+    </header>    
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="navList" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="/lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <h1 id="title">Weather Gallery</h1>
+    <main>        
+        <picture>
+            <img src="placeholder.png" data-src="images/fog.jpg" alt="fog">
+            <figcaption>Fog</figcaption>
+        </picture>
+        <picture>
+            <img src="placeholder.png" data-src="images/hot.jpg" alt="hot">
+            <figcaption>Hot</figcaption>
+        </picture>
+        <picture>
+            <img src="placeholder.png" data-src="images/humid.jpg" alt="humid">
+            <figcaption>Humid</figcaption>
+        </picture>
+        <picture>
+            <img src="placeholder.png" data-src="images/hurricane.jpg" alt="hurricane">
+            <figcaption>Hurricane</figcaption>
+        </picture>
+        <picture>
+            <img src="placeholder.png" data-src="images/rainy.jpg" alt="rainy">
+            <figcaption>Rainy</figcaption>
+        </picture>
+        <picture>
+            <img src="placeholder.png" data-src="images/snowy.jpg" alt="snowy">
+            <figcaption>Snowy</figcaption>
+        </picture>
+        <picture>
+            <img src="placeholder.png" data-src="images/storm.jpg" alt="storm">
+            <figcaption>Storm</figcaption>
+        </picture>
+        <picture>
+            <img src="placeholder.png" data-src="images/sunny.jpg" alt="sunny">
+            <figcaption>Sunny</figcaption>
+        </picture>
+        <picture>
+            <img src="placeholder.png" data-src="images/tornado.jpg" alt="tornado">
+            <figcaption>Tornado</figcaption>
+        </picture>
+    </main>
+    <footer>
+            <p>&copy; Uruguayan Forecaster | BYU-Idaho | Martin S. Cornelli | <span id="currentDate"></span></p>
+    </footer>
+    <script src="script/getCurrentDate.js"></script>
+    <script src="script/toggleMenu.js"></script>
+    <script src="script/lazyload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                'Pompiere', 
+                'Caveat'
+                ]
+            }
+        });
+    </script>
+</body>
+</html>
