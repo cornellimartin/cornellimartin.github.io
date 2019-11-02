@@ -1,0 +1,26 @@
+main {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    text-align: center;
+}
+
+picture {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    display: grid;
+    grid-auto-columns: 1fr;;
+    justify-items: center;
+}
+
+img {
+    margin-bottom: 10px;
+}
+
+main img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+main img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
