@@ -178,10 +178,6 @@ form label.sbs {
     color: #555;
 }
 
-form label.sbs p {
-    margin-bottom: 0px;
-}
-
 form input.submitBtn {
     border: none;
     background-color: #9c2c13;
