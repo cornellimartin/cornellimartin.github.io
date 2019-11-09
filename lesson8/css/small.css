@@ -144,10 +144,6 @@ form label.top {
     font-size: .8rem;
 }
 
-form div {
-    margin-top: 10px;
-}
-
 form label.top input {
     -webkit-appearance: none;
     display: block;
@@ -206,8 +202,14 @@ form label.top input:required:valid {
     display: none;
 }
 
-form textarea {
-    width: 150px;
+textarea {
+    width: 100%;
+    height: 100%;
+}
+
+form div {
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
