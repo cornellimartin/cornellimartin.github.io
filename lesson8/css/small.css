@@ -202,6 +202,14 @@ form label.top input:required:valid {
     border-left: green solid 6px;
 }
 
+#stormTypes {
+    display: none;
+}
+
+form textarea {
+    width: 150px;
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
