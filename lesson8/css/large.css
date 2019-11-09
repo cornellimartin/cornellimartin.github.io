@@ -2,9 +2,6 @@
 *                   DESKTOP                    *
 ***********************************************/
 @media only screen and (min-width: 1360px) { 
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
 
     figure:hover {
         box-shadow: 0 0 50px #333;
@@ -12,6 +9,13 @@
 
     form label.sbs {
         padding: .4rem 0;
+    }
+
+    form fieldset {
+        width: 60%;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        align-self: center;
     }
     
 }
