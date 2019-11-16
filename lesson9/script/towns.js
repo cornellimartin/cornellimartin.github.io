@@ -17,6 +17,11 @@ fetch(requestURL)
         let population = document.createElement('p');
         let annualRainfall = document.createElement('p');
         let image = document.createElement('img');
+        let imageDiv = document.createElement('div');
+        let otherDiv = document.createElement('div');
+
+        imageDiv.className = "column";
+        otherDiv.className = "column";
     
         h2.textContent = towns[i].name;
         motto.textContent = towns[i].motto;
@@ -26,13 +31,16 @@ fetch(requestURL)
         image.setAttribute('src', 'images/' + towns[i].photo);
         image.setAttribute('alt', towns[i].name);
         
-        section.appendChild(h2);
-        section.appendChild(motto);
-        section.appendChild(yearFounded);
-        section.appendChild(population);
-        section.appendChild(annualRainfall);
-        section.appendChild(image);
-    
+
+        otherDiv.appendChild(h2);
+        otherDiv.appendChild(motto);
+        otherDiv.appendChild(yearFounded);
+        otherDiv.appendChild(population);
+        otherDiv.appendChild(annualRainfall);
+        imageDiv.appendChild(image);
+        section.appendChild(otherDiv);
+        section.appendChild(imageDiv);
+        
         document.querySelector('div.towns').appendChild(section);
     }
     }

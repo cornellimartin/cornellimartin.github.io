@@ -110,8 +110,8 @@ main {
 }
 
 .towns {
-    display: grid;
-    gap: 10px;
+    display: flex;
+    flex-flow: column;
     text-align: center;
     color: black;
     font-family: 'Pompiere', cursive;
@@ -132,6 +132,7 @@ section {
     border-width: thin;
     padding: 10px;
     height: auto;
+    margin-top: 10px;
 }
 
 section p {
@@ -148,4 +149,62 @@ section h4 {
     margin-top: 2px;
 }
 
+.fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
 
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+.contact {
+    max-width: 955px;
+    height: auto;
+    border-style: solid;
+    margin-top: 10px;
+    padding: 0px;
+    font-family: 'Pompiere', cursive;
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.contact h3 {
+    margin-bottom: 0px;
+    text-decoration-line: none;
+}
+
+.contact img {
+    display: none;
+}

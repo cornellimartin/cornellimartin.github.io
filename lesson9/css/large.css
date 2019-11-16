@@ -1,9 +1,16 @@
 /***********************************************
 *                   DESKTOP                    *
 ***********************************************/
-@media only screen and (min-width: 960px) { 
+@media only screen and (min-width: 60em) { 
     .towns {
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 960px;
+        flex-direction: row;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
+        max-width: 960px;
+    }
+
+    section {
+        margin-right: 5px;
+        margin-left: 5px;
     }
 }
