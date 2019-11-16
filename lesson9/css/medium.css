@@ -1,0 +1,29 @@
+/***********************************************
+*                   TABLET                     *
+***********************************************/
+@media only screen and (min-width: 700px) {
+    button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    ul {
+        flex-direction: row;
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    .towns {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: dense;
+    }
+}

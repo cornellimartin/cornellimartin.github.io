@@ -1,0 +1,9 @@
+/***********************************************
+*                   DESKTOP                    *
+***********************************************/
+@media only screen and (min-width: 960px) { 
+    .towns {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 960px;
+    }
+}
