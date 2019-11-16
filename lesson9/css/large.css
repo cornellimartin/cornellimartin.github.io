@@ -10,7 +10,12 @@
     }
 
     section {
+        flex-flow: column;
         margin-right: 5px;
         margin-left: 5px;
+    }
+
+    .towns section:nth-child(3){
+        flex-flow: column;
     }
 }

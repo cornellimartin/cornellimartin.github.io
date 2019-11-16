@@ -121,6 +121,10 @@ main {
     height: auto;
 }
 
+.towns section:nth-child(1){
+    order: 3;
+}
+
 section {
     background: #5edfff; /* Old browsers */
     background: -moz-linear-gradient(top,  #5edfff 0%, #7db9e8 100%); /* FF3.6-15 */
@@ -147,6 +151,10 @@ section h2 {
 
 section h4 {
     margin-top: 2px;
+}
+
+section img {
+    box-shadow: 0 0 5px rgba(0,0,0,0.75);
 }
 
 .fa {

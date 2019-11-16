@@ -26,9 +26,13 @@
         flex-flow: column;
     }
 
+    .towns section:nth-child(3) {
+        flex-direction: row-reverse;
+    }
+
     section {
         display: flex;
-        flex-direction: row-reverse;
+        width: 100%;
         text-align: center;
         color: black;
         margin-left: auto;
