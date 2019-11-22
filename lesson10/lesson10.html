@@ -47,11 +47,11 @@
             </div>
             <section class="weatherSummary">
                 <h3>Weather Summary</h3>                
-                   <p>Currently:</p><p class="align"> Sunny</p>
-                   <p>High:</p><p class="align"> 76 ºF</p>
-                   <p>Wind Chill:</p><p class="align"> *F</p>
-                   <p>Humidity:</p><p class="align"> 69%</p>
-                   <p>Wind Speed:</p><p class="align"> 5 mph</p>
+                   <p>Currently:</p><p class="align" id="currentDescription"> </p>
+                   <p>High:</p><p class="align" id="high"> </p>
+                   <p>Wind Chill:</p><p class="align" id="windChill"> *F</p>
+                   <p>Humidity:</p><p class="align" id="humidity"> </p>
+                   <p>Wind Speed:</p><p class="align" id="windSpeed">  </p>
             </section>
         </div>
         <div class="fiveDayContainer">
@@ -104,9 +104,12 @@
         </div>
     </main>
     <footer>
-            <p>&copy; Uruguayan Forecaster | BYU-Idaho | Martin S. Cornelli | <span id="currentDate"></span></p>
+            <p>&copy; Uruguayan Forecaster | BYU-Idaho | Martin S. Cornelli | <span id="currentDate"></span><br>
+            Attributions: <a href="https://openweathermap.org/api">https://openweathermap.org/api</a>
+            </p>
     </footer>
     <script src="js/getCurrentDate.js"></script>
     <script src="js/toggleMenu.js"></script>
+    <script src="js/weatherapi.js"></script>
 </body>
 </html>
