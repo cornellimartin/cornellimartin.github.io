@@ -36,5 +36,5 @@ fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject2) => {
     console.log(jsObject2); // For testing purposes
-    document.getElementsByClassName("days").firstChild.textContent; //Trying to get first child.
+    console.log(document.getElementsByClassName("days").firstChild.innerText); //COLLIN LOOK HERE PLEASE :)
   });
