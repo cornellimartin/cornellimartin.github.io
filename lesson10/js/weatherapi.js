@@ -35,12 +35,17 @@ fetch(apiURL2)
   .then((response) => response.json())
   .then((jsObject2) => {
     var dayTemp = document.getElementsByClassName("temp");
+    var forecastImg = document.getElementsByClassName("images");
+    var imagesrc;
     console.log(dayTemp);
+    console.log(forecastImg);
     for (i = 0; i < jsObject2.list.length; i++) {
       if (jsObject2.list[i].dt_txt.includes('18:00:00')) {
         console.log(jsObject2.list[i].main.temp);   
         console.log(dayTemp[i]);
         dayTemp[i].textContent = jsObject2.list[i].main.temp + "º F";
+        imagesrc = 'https://openweathermap.org/img/wn/' + jsObject2.list[i].weather.icon + '@2x.png';
+        forecastImg[i].setAttribute ('src', imagesrc);        
       }
     }
   });
