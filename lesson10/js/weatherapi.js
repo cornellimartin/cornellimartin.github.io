@@ -35,7 +35,7 @@ fetch(apiURL2)
   .then((response) => response.json())
   .then((jsObject2) => {
     var dayTemp = document.getElementsByClassName("temp");
-    var forecastImg = document.getElementsByClassName("images");
+    var forecastImg = document.getElementsByClassName("forecastImg");
     var imagesrc;
     console.log(dayTemp);
     console.log(forecastImg);
