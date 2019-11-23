@@ -22,6 +22,11 @@
         flex: 1 1 100%;
     }
 
+    
+    .phDiv img {
+        padding-bottom: 0px;
+    }
+
     .fiveDay {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

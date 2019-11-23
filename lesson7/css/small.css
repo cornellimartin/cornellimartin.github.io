@@ -57,10 +57,11 @@ nav ul li {
     background: -webkit-linear-gradient(top,  #00f6ff 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #00f6ff 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f6ff', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
-    padding: 10px;
 }
 
 nav ul li a {
+    display: block;
+    padding: 10px;
     text-decoration: none;
     margin: 0 auto;
     font-weight: bold;
