@@ -40,7 +40,7 @@ fetch(apiURL2)
       if (jsObject2.list[i].dt_txt.includes('18:00:00')) {
         console.log(jsObject2.list[i].main.temp);   
         console.log(dayTemp[i]);
-        //dayTemp[i].textContent = jsObject2.list[i].main.temp + "º F";
+        dayTemp[i].textContent = jsObject2.list[i].main.temp + "º F";
       }
     }
   });
