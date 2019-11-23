@@ -34,15 +34,13 @@ const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?&id=5604473&un
 fetch(apiURL2)
   .then((response) => response.json())
   .then((jsObject2) => {
-
     var dayTemp = document.getElementsByClassName("temp");
-
+    
     for (i = 0; i < jsObject2.list.length; i++) {
       if (jsObject2.list[i].dt_txt.includes('18:00:00')) {
         console.log(jsObject2.list[i].main);   
-        console.log(dayTemp);
         console.log(dayTemp[i]);
-        dayTemp[i].textContent = jsObject2.list[i].main.temp + "º F";
+        //dayTemp[i].textContent = jsObject2.list[i].main.temp + "º F";
       }
     }
   });
