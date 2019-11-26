@@ -21,10 +21,6 @@ fetch(apiURL)
     }
 
     document.getElementById("windChill").innerHTML = chill;
-    //const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  
-    /* document.getElementById('imagesrc').textContent = imagesrc;
-    document.getElementById('weather icon').setAttribute('src', imagesrc); 
-    document.getElementById('weather icon').setAttribute('alt', desc); */
   });
 
 /******************************FORECAST FOR 5 DAYS******************************/
