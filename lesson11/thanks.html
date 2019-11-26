@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Caveat%7cPompiere&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/smallStormcenter.css">
+    <link rel="stylesheet" href="css/mediumStormcenter.css">
+    <link rel="stylesheet" href="css/largeStormcenter.css">
+    <title>Uruguayan Forecaster | Preston</title>
+</head>
+<body>
+    <header>
+        <div id="headerImg">
+            <img src="images/logo-big.png" alt="sun">
+        </div>
+        <div>
+            <h1 class="heading">Uruguayan Forecaster</h1>
+            <h2 class="heading">Plan outdoor fun and work</h2>
+        </div>
+    </header>    
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="navList" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodaSprings.html">Soda Springs</a></li>
+            <li><a href="fishHaven.html">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <h1 id="title">Thank you!</h1>
+    <h2>Thank you for reporting the storm! Your service will help many prevent undesired damages!</h2>
+    <main>        
+
+    </main>
+    <footer>
+            <p>&copy; Uruguayan Forecaster | BYU-Idaho | Martin S. Cornelli | <span id="currentDate"></span></p>
+    </footer>
+    <script src="script/getCurrentDate.js"></script>
+    <script src="script/toggleMenu.js"></script>
+    <script src="script/lazyload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                'Pompiere', 
+                'Caveat'
+                ]
+            }
+        });
+    </script>
+</body>
+</html>

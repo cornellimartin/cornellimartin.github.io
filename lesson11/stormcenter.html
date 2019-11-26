@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Caveat%7cPompiere&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/smallStormcenter.css">
+    <link rel="stylesheet" href="css/mediumStormcenter.css">
+    <link rel="stylesheet" href="css/largeStormcenter.css">
+    <title>Uruguayan Forecaster | Preston</title>
+</head>
+<body>
+    <header>
+        <div id="headerImg">
+            <img src="images/logo-big.png" alt="sun">
+        </div>
+        <div>
+            <h1 class="heading">Uruguayan Forecaster</h1>
+            <h2 class="heading">Plan outdoor fun and work</h2>
+        </div>
+    </header>    
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="navList" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodaSprings.html">Soda Springs</a></li>
+            <li><a href="fishHaven.html">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <h1 id="title">Storm Center</h1>
+    <main>        
+        <form method="GET" action="thanks.html">
+            <fieldset>
+                <legend>Reporter's Personal Information</legend>
+                <label class="top">Full Name* <input type="text" name="name" required pattern="[A-Za-z ]{5,}"></label>
+                <label class="top">Phone <input type="tel" name="phone" required></label>                
+                <label class="top">Zip Code <input type="number" name="zip" required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"></label>            
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Details</legend>
+                <label class="sbs">Storm Date <br><input type="date" name="date"></label>
+                <label class="sbs">Storm Type <br><input list="stormTypes">
+                    <datalist id="stormTypes">
+                      <option value="Flash Flood">
+                      <option value="Hail">
+                      <option value="Hurricane">
+                      <option value="Thunderstom">
+                      <option value="Tornado">
+                    </datalist>
+                </label>                
+                <label class="sbs" for="severity">Storm Severity <br><input type="range" id="severity" name="severity" value="5" min="1" max="10" step="1" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)"><span id="severityValue">5</span></label>
+                <label class="sbs">Storm Region
+                <select name="region">
+                    <option value="" selected="selected" disabled="disabled">Select Region... &#9662;</option>
+                    <option value="preston">Preston</option>
+                    <option value="sodaSprings">Soda Springs</option>
+                    <option value="fishHaven">Fish Haven</option> 
+                </select>   
+                </label>      
+                <div>User In-Danger Level</div>
+                    <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                    <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information or Comments</legend>
+                <label class="top"><textarea></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Report Storm" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+            <p>&copy; Uruguayan Forecaster | BYU-Idaho | Martin S. Cornelli | <span id="currentDate"></span></p>
+    </footer>
+    <script src="js/getCurrentDate.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/form.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                'Pompiere', 
+                'Caveat'
+                ]
+            }
+        });
+    </script>
+</body>
+</html>

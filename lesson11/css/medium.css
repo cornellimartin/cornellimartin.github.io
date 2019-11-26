@@ -1,0 +1,88 @@
+/***********************************************
+*                   TABLET                     *
+***********************************************/
+@media only screen and (min-width: 37.5em) {
+    button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    ul {
+        flex-direction: row;
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    
+    .phDiv img {
+        padding-bottom: 0px;
+    }
+
+    .fiveDay {
+        display: grid;
+        margin: 0;
+    }
+
+    .fiveDay img {
+        grid-row: 2;
+        margin: 0 auto;
+        margin-top: 0px;
+    }
+
+    .fiveDayContainer {
+        display: block;
+        border-style: solid;
+        padding: 0px;
+        background: rgba(94, 223, 255, .5);
+        box-shadow: inset 0 0 5px rgba(0,0,0,0.75);
+    }
+
+    .fiveDayContainer h3 {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        text-decoration-line: none;
+    }
+
+    .days {
+        margin-bottom: 0px;
+    }
+
+    .temp {
+        margin-top: 0px;
+    }
+
+    article {
+        display: flex;
+        text-align: left;
+    }
+
+    .contact {
+        display: flex;
+        text-align: center;
+    }
+
+    .column {
+        flex: 50%;
+        padding: 10px;
+        margin: 0 auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .contact img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: solid;
+        border-width: thin;
+    }
+}
