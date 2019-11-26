@@ -1,4 +1,12 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?&id=5604473&units=imperial&APPID=dd66e694e0d52ba4a1b5e0c95a8a7857";
+var page = document.getElementById("currentPage").textContent;
+
+if (page == "preston"){
+  const apiURL = "https://api.openweathermap.org/data/2.5/weather?&id=5604473&units=imperial&APPID=dd66e694e0d52ba4a1b5e0c95a8a7857";
+} else if (page == "sodaSprings") {
+  const apiURL = "https://api.openweathermap.org/data/2.5/weather?&id=5607916&units=imperial&APPID=dd66e694e0d52ba4a1b5e0c95a8a7857";
+} else {
+  const apiURL = "https://api.openweathermap.org/data/2.5/weather?&lat=42&lon=111&units=imperial&APPID=dd66e694e0d52ba4a1b5e0c95a8a7857";
+}
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -24,9 +32,13 @@ fetch(apiURL)
   });
 
 /******************************FORECAST FOR 5 DAYS******************************/
-
-const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?&id=5604473&units=imperial&APPID=dd66e694e0d52ba4a1b5e0c95a8a7857";
-
+if (page == "preston") {
+  const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?&id=5604473&units=imperial&APPID=dd66e694e0d52ba4a1b5e0c95a8a7857";
+} else if (page == "sodaSprings") {
+  const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?&id=5607916&units=imperial&APPID=dd66e694e0d52ba4a1b5e0c95a8a7857";
+} else {
+  const apiURL2 = "https://api.openweathermap.org/data/2.5/forecast?&lat=42&lon=111&units=imperial&APPID=dd66e694e0d52ba4a1b5e0c95a8a7857";
+}
 const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 fetch(apiURL2)
