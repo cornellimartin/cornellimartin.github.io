@@ -33,4 +33,17 @@
     main {
         grid-template-columns: 1fr 1fr;
     }
+
+    .contact {
+        display: flex;
+        text-align: center;
+    }
+
+    .contact img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: solid;
+        border-width: thin;
+    }
 }
