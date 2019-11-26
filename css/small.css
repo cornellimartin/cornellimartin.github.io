@@ -10,10 +10,12 @@ header, footer {
     color: azure;
     display: flex;
     justify-content: center;
+    height: auto;
 }
 
 footer {
     flex: 1 1 100%;
+    padding: 20px;
 }
 
 h1 {
@@ -52,4 +54,8 @@ li {
 
 #external {
     color: azure;
+}
+
+.tabbed {
+    margin-left: 50px;
 }
