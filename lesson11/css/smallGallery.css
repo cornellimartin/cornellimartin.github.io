@@ -186,6 +186,8 @@ body div {
     height: auto;
     border-style: solid;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0px;
 }
 
