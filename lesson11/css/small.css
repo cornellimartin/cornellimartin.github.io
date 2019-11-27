@@ -183,18 +183,25 @@ article {
     margin-bottom: 10px;  
 }
 
-.events {
-    background: rgba(94, 223, 255, 0.5);
-    display: block;
-    border-style: solid;
-    padding: 0px;
-    text-align: center;
-    color: black;
-    max-width: 960px;
+.box h2 {
+    text-decoration-line: underline;
+    text-decoration-color: tomato;
+    margin-top: 5px;
+}
+
+.box {
+    background: lightgray;
+    width: 50%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto; 
     margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: solid;
+    border-width: thick;
+    border-radius: 20px;
+    border-color: black;
+    box-shadow: 0 0 25px rgba(0,0,0,0.75);
 }
 
 article h3 {

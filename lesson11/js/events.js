@@ -12,19 +12,19 @@ fetch(requestURL)
             for (j = 0; j < towns[i].events.length; j++){
                 let event = document.createElement('p');
                 event.textContent = towns[i].events[j];
-                document.querySelector('article.events').appendChild(event);
+                document.querySelector('div.box').appendChild(event);
             }
         } else if (towns[i].name == "Soda Springs" && page == "sodaSprings") {
             for (j = 0; j < towns[i].events.length; j++){
                 let event = document.createElement('p');
                 event.textContent = towns[i].events[j];
-                document.querySelector('article.events').appendChild(event);
+                document.querySelector('div.box').appendChild(event);
             }
         } else if (towns[i].name == "Fish Haven" && page == "fishHaven") {
             for (j = 0; j < towns[i].events.length; j++){
                 let event = document.createElement('p');
                 event.textContent = towns[i].events[j];
-                document.querySelector('article.events').appendChild(event);
+                document.querySelector('div.box').appendChild(event);
             }
         }
     }
