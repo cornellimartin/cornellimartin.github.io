@@ -78,6 +78,10 @@ nav ul li:hover {
     background: #ecfcff;
 }
 
+body div {
+    padding: 20px;
+}
+
 main div {
     color: black;
     font-weight: bold;
