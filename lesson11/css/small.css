@@ -175,12 +175,28 @@ article {
     max-width: 960px;
     height: auto;
     margin-left: auto;
-    margin-right: auto;   
+    margin-right: auto; 
+    margin-bottom: 10px;  
+}
+
+.events {
+    background: rgba(94, 223, 255, 0.5);
+    display: block;
+    border-style: solid;
+    padding: 0px;
+    text-align: center;
+    color: black;
+    max-width: 960px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 10px;
 }
 
 article h3 {
     text-decoration-line: none;
     margin-bottom: 0px;
+    padding: 20px;
 }
 
 .author {
