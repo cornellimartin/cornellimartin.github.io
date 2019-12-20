@@ -262,3 +262,9 @@ footer {
 .resources li {
     padding: 10px;
 }
+
+#thankYou {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
