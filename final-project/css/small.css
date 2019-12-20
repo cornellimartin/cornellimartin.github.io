@@ -242,3 +242,11 @@ footer {
 #templeFooter {
     max-width: 815px;
 }
+
+.reception {
+    color: black;    
+}
+
+.reception li {
+    text-align: left;
+}
