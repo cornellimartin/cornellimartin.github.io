@@ -124,6 +124,7 @@ article {
 
 form input{
     max-width: 320px;
+    margin-bottom: 5px;
 }
 
 form label{
@@ -197,4 +198,9 @@ table ul li {
 
 .strong {
     font-weight: bold;
+}
+
+iframe {
+    margin-left: auto;
+    margin-right: auto;
 }
