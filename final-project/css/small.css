@@ -250,3 +250,15 @@ footer {
 .reception li {
     text-align: left;
 }
+
+.resources {
+    display: block;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.resources li {
+    padding: 10px;
+}
