@@ -196,6 +196,11 @@ table ul li {
     padding: 10px;
 }
 
+table td.closure ul li {
+    text-align: left;
+    color: red;
+}
+
 .strong {
     font-weight: bold;
 }
